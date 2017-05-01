@@ -20,19 +20,25 @@ See the [video from Clojure/West 2014](https://www.youtube.com/watch?v=13cmHf_kt
 
 [Leiningen] dependency information:
 
-    [com.stuartsierra/component "0.3.2"]
+```clojure
+[com.stuartsierra/component "0.3.2"]
+```
 
 [Maven] dependency information:
 
-    <dependency>
-      <groupId>com.stuartsierra</groupId>
-      <artifactId>component</artifactId>
-      <version>0.3.2</version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.stuartsierra</groupId>
+  <artifactId>component</artifactId>
+  <version>0.3.2</version>
+</dependency>
+```
 
 [Gradle] dependency information:
 
-    compile "com.stuartsierra:component:0.3.2"
+```groovy
+compile "com.stuartsierra:component:0.3.2"
+```
 
 [Clojars]: http://clojars.org/
 [Leiningen]: http://leiningen.org/
@@ -329,7 +335,7 @@ dependencies based on the metadata provided by `using`.
 Again using the example above, the ExampleComponent would be started
 *as if* you did this:
 
-```
+```clojure
 (-> example-component
     (assoc :database (:db system))
     (assoc :scheduler (:sched system))
